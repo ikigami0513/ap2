@@ -11,6 +11,10 @@
     session_start();
     if(!isset($_SESSION["user"])) { header("Location:/ap2/vue/connexion.php"); }
 
+    if(isset($_POST["submit"])){
+        SalleController::addReservation();
+    }
+
     Template::header("Réservation", array(), array());
     Template::menu();
     Salle::reservationSalleForm();

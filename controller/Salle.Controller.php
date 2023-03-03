@@ -51,4 +51,8 @@
             $db_salle->removeSalle($id);
             $_SESSION["success"] = "<script language=\"javascript\">alert(\"La salle possédant l'id $id a bien été supprimée.\");</script>";
         }
+
+        public static function addReservation(){
+            
+        }
     }
