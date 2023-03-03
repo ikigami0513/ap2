@@ -86,7 +86,8 @@
                     " . Salle::getHeureSelect() . "<br/><br/>
                     <label for=\"salle_dispo\">Salle(s) disponible(s)</label><br/>
                     <select id=\"salle_dispo\" name=\"salle_dispo\">
-                    </select>
+                    </select><br/><br/>
+                    <input type=\"submit\" name=\"submit\" id=\"submit\" value=\"Réserver\"/>
                 </form>
             ";
         }

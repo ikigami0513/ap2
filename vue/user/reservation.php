@@ -14,4 +14,5 @@
     Template::header("Réservation", array(), array());
     Template::menu();
     Salle::reservationSalleForm();
+    echo "<script language=\"javascript\" src=\"/ap2/script/reservation.js\"></script>";
     Template::footer();

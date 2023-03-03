@@ -39,4 +39,20 @@
             ");
             $stmt->execute(array($id));
         }
+
+        public function getSallesDispo(int $type, string $date, string $heure){
+            $stmt = $this->pdo->prepare("
+                SELECT s.id, s.nom 
+                FROM salle s
+                WHERE s.type = ?
+                AND s.id NOT IN (
+                    SELECT salle
+                    FROM calendrier
+                    WHERE dateReservation = ?
+                    AND heureReservation = ?
+                );
+            ");
+            $stmt->execute(array($type, $date, $heure));
+            return $stmt->fetchAll();
+        }
     }
