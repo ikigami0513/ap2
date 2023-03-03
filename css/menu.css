@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html{
+    font-family: sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #151617;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 5rem;
+    padding-right: 1.5rem;
+    border-bottom: 5px solid #1AE5F7;
+
+}
+
+.nav-logo{
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item{
+    margin-left: 3rem;
+}
+
+.nav-link{
+    font-size: 30px;
+    color: white;
+}
+
+.nav-link:hover{
+    color: #1AE5F7;
+}
+
+.deconnexion-logo{
+    width: 50px;
+}
+
+.profil_picture{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    vertical-align: middle;
+}

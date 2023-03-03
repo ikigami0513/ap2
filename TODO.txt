@@ -1,0 +1,3 @@
+arrivé à la réservation
+    adapter le fichier reservation.js par rapport à mon site
+    créer le script de validation de reservation

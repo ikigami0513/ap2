@@ -1,0 +1,8 @@
+footer{
+    width: 100%;
+    height: 120px;
+    background-color: #151617;
+    position: absolute;
+    bottom: 0;
+    border-top: 5px solid #1AE5F7;
+}
